@@ -24,32 +24,28 @@ Here I have chosen _R_ to be the chosen tool for reproducible analyses, although
 
 ## Analysis Template
 
-I have prepared an analysis template, which contains examples of the whole process of data analysis; from loading to preprocessing data and analysing and reporting the results. I suggest a certain folder structure to keep the different parts of the processes tightly in different folders. I have been influenced by existing templates[^fn-ProjectTemplate] and style guides[^fn-acknowledgments], but it is basically the cleaned up version of the structures that I have for each project.
-
-[^fn-ProjectTemplate]: [ProjectTemplate](http://projecttemplate.net)
-[^fn-acknowledgments]: [Style Guide](http://adv-r.had.co.nz/Style.html)
-
+I have prepared an analysis template, which contains examples of the whole process of data analysis; from loading to preprocessing data and analysing and reporting the results. I suggest a certain folder structure to keep the different parts of the processes tightly in different folders. I have been influenced by existing [templates](ProjectTemplate](http://projecttemplate.net) and [style guides](http://adv-r.had.co.nz/Style.html), but it is basically the cleaned up version of the structures that I have for each project.
 
 ### Suggested folder structure:
 
 A project should have a dedicated folder with a descriptive name it. Within the folder, there is a master file called the `contents.R` which contains the necessary commands to load the data, pre-process it, analyse, and produce figures and tables. For clarity, it is good idea to keep things organised in particular special subfolders. 
 
-config
+**config**
 : Configuration file (`libraries.R`), which define custom functions and loads the R libraries needed in the project.
 
-data
+**data**
 : Stores the original data, preferably in read-only format. Can be Excel or ascii files, or folders of separate files exported from experiment data collection interface.
 
-munge
+**munge**
 : Munger refers to "data munging", which means cleaning and transforming the data to a suitable format for the analysis. If you have to recode (e.g. inverse) and combine items into instruments, this is the place to do it. 
 
-scr
+**scr**
 : Scripts used in the analysis. This is the main folder for the analysis. Examples of diagnostics, statistical testing, plotting, generating tables are given.
 
-figures
+**figures**
 : All figures and graphs produced by analysis scripts (preferably in pdf format)
 
-reports
+**reports**
 : Reports summarising the analysis, either manually or automatically. The latter can be done with [R markdown](http://rmarkdown.rstudio.com).
 
 
