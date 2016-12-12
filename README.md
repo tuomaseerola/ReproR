@@ -3,7 +3,7 @@
 _Tuomas Eerola_
 [tuomas.eerola@durham.ac.uk](tuomas.eerola@durham.ac.uk), Durham University, UK
 
-19.1.2015
+19/1/2015, update 12/12/2016
 
 ## Why reproducible research? 
 
@@ -125,6 +125,8 @@ Happy exploring. The intention is carrying out the analysis this way is to get a
 #### 4. Combine report and analysis (optional)
 
 It is also possible to combine the reporting of the analysis and the actual analysis to make the process even more transparent. An example of this can be found in `report.Rmd`, which basically runs the steps in the example tempate in sequence within a particular syntax (R md, using `knitr`, and this also creates a pdf or htlm report to the same folder (take a loot at the `report.pdf`), which can contain all sorts of written arguments, comments and so on. In order to use this option, the `report.Rmd` should be on the project folder (not within reports subfolder) and your machine should have additional libraries installed (at least _LaTeX_ and _knitr_, see [knitr in a nutshell](http://kbroman.org/knitr_knutshell/)).
+
+_Update in December 2016_: RStudio now supports **R Notebooks**, which combine the scripts and reports in a very nice fashion. See `report_NB.Rmd` for an example.
 
 ## Help for statistics with R
 
